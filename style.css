@@ -1,0 +1,259 @@
+/* --------------------------------------reset styles-------------------------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* --------------------------------------fonts---------------------------------------- */
+
+/* inter-regular - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/inter-v12-cyrillic-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/inter-v12-cyrillic-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/roboto-v30-cyrillic_latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/roboto-v30-cyrillic_latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/*---------------------------*/
+
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #000000;
+  background: #f1eeee;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.left-panel {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.books-block {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 782px;
+}
+
+@media (max-width: 1600px) {
+  .books-block {
+    width: 100%;
+  }
+}
+
+.books-content {
+  padding: 20px 20px 10px;
+  background: #fff;
+  width: 100%;
+}
+
+.title {
+  text-align: start;
+  font-family: "Inter";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -1.056px;
+}
+
+.favorite-books {
+}
+
+.books-list {
+}
+
+.book {
+}
+
+.form-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.area {
+  padding: 10px;
+  border: 1px dashed #000;
+  background: #f1f0f0;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 0.52px;
+  text-transform: uppercase;
+}
+
+.active-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.write-title {
+  border: 2px solid #000;
+}
+
+.write-text {
+  border: 2px solid #000;
+}
+
+.right-panel {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.block-content {
+  padding: 30px;
+  border: 10px solid #f1eeee;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.084px;
+  background-color: #e5e5e5;
+}
+
+.right-panel:after {
+  content: "";
+  bottom: 0px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1) inset,
+    0px 0px 15px 0px rgba(0, 0, 0, 0.5) inset;
+  left: 0px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -5;
+}
+
+.text {
+}
